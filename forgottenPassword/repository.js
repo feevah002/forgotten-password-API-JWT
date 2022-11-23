@@ -5,8 +5,8 @@ const sendEmail = require("../utils/email/sendEmail");
 const crypto = require("crypto");
 const bcrypt = require("bcrypt");
 
-const JWTSecret = process.env.JWT_SECRET = "i love cats";
-const bcryptSalt = process.env.BCRYPT_SALT = "i love cats";
+const JWTSecret = process.env.JWT_SECRET ;
+const bcryptSalt = process.env.BCRYPT_SALT ;
 const clientURL = process.env.CLIENT_URL;
 
 exports.signup = async (data) => {

@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const Schema = mongoose.Schema;
-const bcryptSalt = process.env.BCRYPT_SALT = "i love cats";
+const bcryptSalt = process.env.BCRYPT_SALT;
 const userSchema = new Schema(
   {
     name: {
