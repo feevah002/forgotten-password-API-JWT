@@ -6,13 +6,15 @@ const app = express();
 // const connection = require("./db");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+let db_url= process.env.DB_URL
+
 main().catch(err=>{
   if(err){
     console.log(err)
   }
 })
 async function main(){
-  await mongoose.connect("mongodb://localhost:27017/forgottenpassword")
+  await mongoose.connect(db_url)
 }
 
 

@@ -23,4 +23,6 @@ exports.resetPasswordController = async (req, res, next) => {
   );
   return res.json(resetPasswordService);
 };
-
+exports.loginController = async (req,res,next)=>{
+  
+}
